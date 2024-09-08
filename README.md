@@ -37,17 +37,17 @@
 
 ## Exemplo de Uso
   ### Cadastro de um Cliente
-  No menu, selecione a opção 1 para "Adicionar Cliente".
-  Insira o documento e o nome do cliente.
-  O cliente será cadastrado e poderá ser usado ao efetuar uma vendas.
+  - No menu, selecione a opção 1 para "Adicionar Cliente".
+  - Insira o documento e o nome do cliente.
+  - O cliente será cadastrado e poderá ser usado ao efetuar uma venda.
 
   ### Cadastro de um Produto
-  No menu, escolha "Adicionar Produto".
-  Insira o nome e o preço do produto.
-  O produto será adicionado à lista e estará disponível para vendas.
+  - No menu, escolha "Adicionar Produto".
+  - Insira o nome e o preço do produto.
+  - O produto será adicionado à lista e estará disponível para vendas.
 
   ### Realização de Venda
-  Escolha a opção 9 "Realizar Venda" no menu.
-  Insira o documento do cliente ou deixe em branco para venda sem cliente.
-  Adicione os produtos à venda pelo código e quantidade.
-	Finalize a venda e o registro será salvo no banco de dados.
+  - Escolha a opção 9 "Realizar Venda" no menu.
+  - Insira o documento do cliente ou deixe em branco para venda sem cliente.
+  - Adicione os produtos à venda pelo código e quantidade.
+  - Finalize a venda e o registro será salvo no banco de dados.

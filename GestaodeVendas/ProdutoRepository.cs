@@ -66,7 +66,6 @@
         }
     }
 
-    // Método de atualização de produto
     public void AtualizarProduto(Produto produto)
     {
         using var connection = DatabaseManager.GetConnection();

@@ -80,7 +80,6 @@
         }
     }
 
-    // Método de atualização de cliente
     public void AtualizarCliente(Cliente cliente)
     {
         using var connection = DatabaseManager.GetConnection();

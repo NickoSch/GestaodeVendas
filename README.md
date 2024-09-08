@@ -1,25 +1,26 @@
-### Sistema de Gestão de Vendas
-  Descrição do Projeto
-  Este é um projeto de um sistema básico para gestão de vendas, desenvolvido em C# utilizando um banco de dados SQLite. 
-  O sistema permite o gerenciamento de clientes, produtos e realização de vendas. Inclui a possibilidade de cadastrar, listar, atualizar e remover cadastros. Além disso, é possível realizar vendas com ou sem associação a um cliente.
+# Sistema de Gestão de Vendas
+  
+## Descrição do Projeto
+  - Este é um projeto de um sistema básico para gestão de vendas, desenvolvido em C# utilizando um banco de dados SQLite. 
+  - O sistema permite o gerenciamento de clientes, produtos e realização de vendas. Inclui a possibilidade de cadastrar, listar, atualizar e remover cadastros. Além disso, é possível realizar vendas com ou sem associação a um cliente.
 
 ## Funcionalidades
-  Gerenciamento de Clientes: Adicionar, listar, atualizar e remover clientes.
-  Gerenciamento de Produtos: Adicionar, listar, atualizar e remover produtos.
-  Realização de Vendas: Permite realizar vendas de produtos, informando ou não um cliente.
+  - Gerenciamento de Clientes: Adicionar, listar, atualizar e remover clientes.
+  - Gerenciamento de Produtos: Adicionar, listar, atualizar e remover produtos.
+  - Realização de Vendas: Permite realizar vendas de produtos, informando ou não um cliente.
 
 ## Arquitetura
-  A projeto segue uma arquitetura simples com camadas de repositórios para cada entidade (Cliente, Produto, Venda). Facilitando a manutenção e o teste de cada parte do sistema.
-  O acesso ao banco de dados é centralizado através da classe DatabaseManager, que gerencia a conexão com o SQLite.
-  As operações de CRUD (Create, Read, Update, Delete) foram implementadas para todas as entidades (Clientes e Produtos).
+  - A projeto segue uma arquitetura simples com camadas de repositórios para cada entidade (Cliente, Produto, Venda). Facilitando a manutenção e o teste de cada parte do sistema.
+  - O acesso ao banco de dados é centralizado através da classe DatabaseManager, que gerencia a conexão com o SQLite.
+  - As operações de CRUD (Create, Read, Update, Delete) foram implementadas para todas as entidades (Clientes e Produtos).
 
 ## Organização dos Arquivos
-  Cliente.cs: Classe que representa um cliente.
-  Produto.cs: Classe que representa um produto.
-  Venda.cs: Classe que representa uma venda e seus itens.
-  ClienteRepository.cs: Responsável por todas as operações de banco de dados relacionadas a clientes.
-  ProdutoRepository.cs: Responsável pelas operações de banco de dados relacionadas a produtos.
-  VendaRepository.cs: Gerencia as vendas e os itens relacionados.
+  - Cliente.cs: Classe que representa um cliente.
+  - Produto.cs: Classe que representa um produto.
+  - Venda.cs: Classe que representa uma venda e seus itens.
+  - ClienteRepository.cs: Responsável por todas as operações de banco de dados relacionadas a clientes.
+  - ProdutoRepository.cs: Responsável pelas operações de banco de dados relacionadas a produtos.
+  - VendaRepository.cs: Gerencia as vendas e os itens relacionados.
 
 ## Funcionalidades do Menu
   Ao iniciar o sistema, o menu principal será exibido com as seguintes opções:
@@ -35,17 +36,17 @@
   10. Sair: Fecha o programa.
 
 ## Exemplo de Uso
-  # Cadastro de um Cliente
+  ### Cadastro de um Cliente
   No menu, selecione a opção 1 para "Adicionar Cliente".
   Insira o documento e o nome do cliente.
   O cliente será cadastrado e poderá ser usado ao efetuar uma vendas.
 
-  # Cadastro de um Produto
+  ### Cadastro de um Produto
   No menu, escolha "Adicionar Produto".
   Insira o nome e o preço do produto.
   O produto será adicionado à lista e estará disponível para vendas.
 
-  # Realização de Venda
+  ### Realização de Venda
   Escolha a opção 9 "Realizar Venda" no menu.
   Insira o documento do cliente ou deixe em branco para venda sem cliente.
   Adicione os produtos à venda pelo código e quantidade.
